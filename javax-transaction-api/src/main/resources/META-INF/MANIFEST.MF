@@ -1,0 +1,2 @@
+Export-Package: javax.*;version=${project.version}
+Import-Package: *;resolution:=optional
