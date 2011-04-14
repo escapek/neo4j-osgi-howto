@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>neo4j-osgi-howto</artifactId>
+		<groupId>org.escapek</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>org.escapek.neo4j-osgi-howto</groupId>
+	<artifactId>embedded-client</artifactId>
+	<packaging>bundle</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>EscapeK - Neo4j OSGi how-to - Embedded client</name>
+	<description>Embedded client using Neo4j on OSGi</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>osgi_R4_core</artifactId>
+			<version>1.0</version>
+			<scope>provided</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.osgi</groupId>
+			<artifactId>osgi_R4_compendium</artifactId>
+			<version>1.0</version>
+			<scope>provided</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.neo4j</groupId>
+			<artifactId>neo4j</artifactId>
+			<version>1.4-SNAPSHOT</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+</project>

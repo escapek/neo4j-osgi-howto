@@ -1,0 +1,2 @@
+Bundle-Activator: org.escapek.neo4jOsgiHowto.embeddedClient.EmbeddedClientActivator
+Export-Package: org.escapek.neo4jOsgiHowto.embeddedClient	
