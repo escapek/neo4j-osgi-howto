@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>neo4j-osgi-howto</artifactId>
+		<groupId>org.escapek</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>org.escapek.neo4j-osgi-howto</groupId>
+	<artifactId>jconsole</artifactId>
+	<version>1.6</version>
+
+	<name>EscapeK - Bundles - Jconsole</name>
+	<description>Bundled version of Jconsole</description>
+	<packaging>bundle</packaging>
+
+	<profiles>
+		<profile>
+			<id>Linux-dependency-jconsole.jar</id>
+			<activation>
+				<os>
+					<name>Linux</name>
+				</os>
+			</activation>
+			<dependencies>
+				<dependency>
+					<groupId>com.sun.tools</groupId>
+					<artifactId>jconsole</artifactId>
+					<version>1.6</version>
+					<scope>system</scope>
+					<systemPath>${java.home}/../lib/jconsole.jar</systemPath>
+					<optional>true</optional>
+				</dependency>
+			</dependencies>
+		</profile>
+		<profile>
+			<id>Mac-OS-X-dependency-jconsole.jar</id>
+			<activation>
+				<os>
+					<family>mac</family>
+				</os>
+				<file>
+					<exists>${java.home}/lib/jconsole.jar</exists>
+				</file>
+			</activation>
+			<dependencies>
+				<dependency>
+					<groupId>com.sun.tools</groupId>
+					<artifactId>jconsole</artifactId>
+					<version>1.6</version>
+					<scope>system</scope>
+					<systemPath>${java.home}/lib/jconsole.jar</systemPath>
+					<optional>true</optional>
+				</dependency>
+			</dependencies>
+		</profile>
+		<profile>
+			<id>Windows-dependency-jconsole.jar</id>
+			<activation>
+				<os>
+					<family>Windows</family>
+				</os>
+			</activation>
+			<dependencies>
+				<dependency>
+					<groupId>com.sun.tools</groupId>
+					<artifactId>jconsole</artifactId>
+					<version>1.6</version>
+					<scope>system</scope>
+					<systemPath>${java.home}\\..\\lib\\jconsole.jar</systemPath>
+					<optional>true</optional>
+				</dependency>
+			</dependencies>
+		</profile>
+	</profiles>
+</project>
