@@ -11,6 +11,7 @@
 	<modules>
 		<module>javax-transaction-api</module>
 		<module>embedded-client</module>
+		<module>jconsole</module>
 	</modules>
 
 	<properties>

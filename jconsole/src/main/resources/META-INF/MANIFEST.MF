@@ -1,0 +1,2 @@
+Export-Package: com.sun.tools.*;version=${project.version},sun.tools.*;version=${project.version}
+Import-Package: *;resolution:=optional

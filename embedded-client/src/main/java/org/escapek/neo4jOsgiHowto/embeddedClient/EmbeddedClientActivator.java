@@ -42,13 +42,13 @@ public class EmbeddedClientActivator implements BundleActivator
 			firstNode.setProperty( "message", "Hello, " );
 			secondNode.setProperty( "message", "world!" );
 			relationship.setProperty( "message", "brave Neo4j " );
+			System.out.println("OK");
 			
 			System.out.print( firstNode.getProperty( "message" ) );
 			System.out.print( relationship.getProperty( "message" ) );
 			System.out.println( secondNode.getProperty( "message" ) );
 			
 			tx.success();
-			System.out.println("OK");
 		} 
 		catch (Exception e) {
 			System.out.println("KO: " + e.getMessage());
