@@ -1,0 +1,2 @@
+Export-Package: org.rrd4j.*;version=${project.version}
+Import-Package: *;resolution:=optional

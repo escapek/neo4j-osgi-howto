@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>neo4j-osgi-howto</artifactId>
+		<groupId>org.escapek</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>org.escapek.neo4j-osgi-howto</groupId>
+	<artifactId>rrd4j</artifactId>
+	<version>2.0.6</version>
+	<name>EscapeK - Bundles - RRD4j</name>
+	<description>Bundled version of RRD4j</description>
+	<packaging>bundle</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.rrd4j</groupId>
+			<artifactId>rrd4j</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+</project>
