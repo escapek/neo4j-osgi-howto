@@ -12,6 +12,9 @@
 		<module>javax-transaction-api</module>
 		<module>embedded-client</module>
 		<module>jconsole</module>
+		<module>tinkerpop</module>
+		<module>servlet-api</module>
+		<module>activation</module>
 	</modules>
 
 	<properties>

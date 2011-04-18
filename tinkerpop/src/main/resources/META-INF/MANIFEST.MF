@@ -1,0 +1,2 @@
+Export-Package: com.tinkerpop.*;version=${project.version}
+Import-Package: *;resolution:=optional
