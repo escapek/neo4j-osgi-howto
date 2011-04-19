@@ -64,7 +64,7 @@
 						<Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>
 						<Bundle-Version>${project.version}</Bundle-Version>
 						<!-- Allow each bundle to override these settings by creating a file -->
-						<_include>src/main/resources/META-INF/MANIFEST.MF</_include>
+						<_include>-osgi.bnd</_include>
 					</instructions>
 				</configuration>
 			</plugin>
