@@ -1,0 +1,2 @@
+Export-Package: jline.*;version=${project.version}
+Import-Package: *;resolution:=optional

@@ -16,6 +16,7 @@
 		<module>servlet-api</module>
 		<module>activation</module>
 		<module>rrd4j</module>
+		<module>jline</module>
 	</modules>
 
 	<properties>

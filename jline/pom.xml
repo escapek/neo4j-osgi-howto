@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>neo4j-osgi-howto</artifactId>
+		<groupId>org.escapek</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>org.escapek.neo4j-osgi-howto</groupId>
+	<artifactId>jline</artifactId>
+	<version>0.9.94</version>
+	<packaging>bundle</packaging>
+
+	<name>EscapeK - Bundles - jline</name>
+	<description>Bundled version of jline</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>jline</groupId>
+			<artifactId>jline</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+
+</project>
