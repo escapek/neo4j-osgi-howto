@@ -23,6 +23,8 @@ import org.neo4j.kernel.AbstractGraphDatabase;
 import org.neo4j.kernel.EmbeddedGraphDatabase;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
+import java.util.Properties;
+import org.neo4j.graphdb.index.IndexProvider;
 
 public class EmbeddedClientActivator implements BundleActivator
 {
@@ -60,6 +62,7 @@ public class EmbeddedClientActivator implements BundleActivator
 		
 		//Expose GraphDB as OSGi service
 		context.registerService(AbstractGraphDatabase.class.getName(), graphDb, null);
+        context.registerService( IndexProvider.class.getName(), graphDb.index().forNodes( "nodes" ), new Properties() );
 	}
 
 	public void stop(BundleContext context) throws Exception {
