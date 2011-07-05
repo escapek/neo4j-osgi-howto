@@ -8,6 +8,6 @@ Instructions are available on the wiki page : https://www.assembla.com/spaces/es
 Instructions 
 ------------
 
-$ git glone http://github.com/escapek/neo4j-osgi-howto.git
+$ git clone http://github.com/escapek/neo4j-osgi-howto.git
 $ cd neo4j-osgi-howto
 $ mvn clean install
