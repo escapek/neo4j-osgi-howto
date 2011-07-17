@@ -1,2 +1,3 @@
 Bundle-Activator: org.escapek.neo4jOsgiHowto.embeddedClient.EmbeddedClientActivator
-Export-Package: org.escapek.neo4jOsgiHowto.embeddedClient	
+Export-Package: org.escapek.neo4jOsgiHowto.embeddedClient
+Import-Package: org.neo4j.*;version=0.0, org.osgi.framework.*,javax.transaction

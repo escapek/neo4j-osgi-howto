@@ -30,9 +30,14 @@
 		</dependency>
 		<dependency>
 			<groupId>org.neo4j</groupId>
-			<artifactId>neo4j</artifactId>
-			<version>1.4-SNAPSHOT</version>
+			<artifactId>neo4j-osgi-bundle</artifactId>
+			<version>0.1-SNAPSHOT</version>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.neo4j</groupId>
+			<artifactId>neo4j</artifactId>
+			<version>1.4.M06</version>
 		</dependency>
 	</dependencies>
 </project>
